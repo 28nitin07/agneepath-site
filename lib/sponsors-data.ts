@@ -11,12 +11,12 @@ export interface Sponsor {
 }
 
 export const sponsorTiers: { tier: SponsorTier; color: string; description: string }[] = [
-  { tier: "Title", color: "from-purple-500 to-pink-500", description: "Primary Event Partner" },
-  { tier: "Platinum", color: "from-slate-200 to-slate-400", description: "Premium Sponsors" },
-  { tier: "Gold", color: "from-yellow-400 to-amber-500", description: "Gold Tier Partners" },
-  { tier: "Silver", color: "from-gray-300 to-gray-400", description: "Silver Tier Partners" },
-  { tier: "Bronze", color: "from-orange-400 to-amber-600", description: "Bronze Tier Partners" },
-  { tier: "Associate", color: "from-blue-400 to-indigo-500", description: "Associate Partners" },
+  { tier: "Title", color: "from-gray-900 to-gray-700", description: "Primary Event Partner" },
+  { tier: "Platinum", color: "from-gray-400 to-gray-500", description: "Premium Partners" },
+  { tier: "Gold", color: "from-amber-400 to-amber-500", description: "Gold Partners" },
+  { tier: "Silver", color: "from-gray-300 to-gray-400", description: "Silver Partners" },
+  { tier: "Bronze", color: "from-orange-300 to-orange-400", description: "Bronze Partners" },
+  { tier: "Associate", color: "from-blue-300 to-blue-400", description: "Associate Partners" },
 ];
 
 export const sponsors: Sponsor[] = [
