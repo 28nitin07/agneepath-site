@@ -56,15 +56,22 @@ export default function SponsorsPage() {
           animate="show"
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         >
-          {sponsors.map((sponsor) => (
-            <motion.a
+          {sponsors.map((sponsor) => {
+          const Component = sponsor.website ? motion.a : motion.div;
+          const linkProps = sponsor.website ? {
+            href: sponsor.website,
+            target: "_blank",
+            rel: "noopener noreferrer",
+            "aria-label": `Visit ${sponsor.name} website`
+          } : {};
+          
+          return (
+            <Component
               key={sponsor.id}
-              href={sponsor.website || "#"}
-              target={sponsor.website ? "_blank" : undefined}
-              rel={sponsor.website ? "noopener noreferrer" : undefined}
+              {...linkProps}
               variants={item}
-              whileHover={{ y: -8, scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={sponsor.website ? { y: -8, scale: 1.02 } : { scale: 1.02 }}
+              whileTap={sponsor.website ? { scale: 0.98 } : undefined}
               className={sponsor.website ? "cursor-pointer" : "cursor-default"}
             >
               <Card className="group relative overflow-hidden border border-gray-200 hover:border-gray-400 hover:shadow-lg transition-all duration-300">
@@ -78,9 +85,11 @@ export default function SponsorsPage() {
                   {sponsor.logo ? (
                     <Image
                       src={sponsor.logo}
-                      alt={sponsor.name}
+                      alt={`${sponsor.name} logo`}
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                       className="object-contain p-8 group-hover:scale-110 transition-transform duration-300"
+                      priority={false}
                     />
                   ) : (
                     <Building2 className="w-16 h-16 text-gray-300 group-hover:text-gray-400 transition-colors duration-300" />
@@ -92,8 +101,9 @@ export default function SponsorsPage() {
                   <p className="text-white font-medium text-sm">{sponsor.name}</p>
                 </div>
               </Card>
-            </motion.a>
-          ))}
+            </Component>
+          );
+        })}
         </motion.div>
       </div>
     </div>
