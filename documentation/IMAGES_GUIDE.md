@@ -17,7 +17,7 @@ public/
 
 **Location:** `/public/team/`
 
-**Required Images:** 34 team member photos
+**Required Images:** 36 team member photos
 
 ### Naming Convention
 
