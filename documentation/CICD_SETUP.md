@@ -57,7 +57,7 @@ Configure these secrets in your GitHub repository settings:
 
 ```bash
 # Generate SSH key pair
-ssh-keygen -t rsa -b 4096 -C "github-actions@ag-site"
+ssh-keygen -t rsa -b 4096 -C "github-actions@mainsite"
 
 # Copy public key to server
 ssh-copy-id -i ~/.ssh/id_rsa.pub user@server-ip
@@ -150,7 +150,7 @@ Add these to your README.md:
 - Verify SSH credentials are correct
 - Check server has sufficient disk space
 - Ensure PM2 is installed on server
-- Check server logs: `pm2 logs ag-site`
+- Check server logs: `pm2 logs mainsite`
 
 ### Linting Errors
 - Run locally: `npm run lint`
