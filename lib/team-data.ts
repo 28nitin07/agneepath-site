@@ -324,4 +324,18 @@ export const teamMembers: TeamMember[] = [
     vertical: "Tech",
     image: "/team/parshwa-doshi.jpg"
   },
+  {
+    id: "35",
+    name: "Hriday Koppikar",
+    role: "Tech",
+    vertical: "Tech",
+    image: "/team/hriday-koppikar.jpg"
+  },
+  {
+    id: "36",
+    name: "Shristi Sharma",
+    role: "Tech",
+    vertical: "Tech",
+    image: "/team/shristi-sharma.jpg"
+  },
 ];
