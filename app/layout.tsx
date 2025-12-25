@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Agneepath 7.0 - Ashoka University Sports Fest",
   description: "Official website for Agneepath 7.0, Ashoka University's premier sports festival",
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
