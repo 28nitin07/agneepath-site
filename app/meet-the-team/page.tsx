@@ -60,7 +60,7 @@ export default function TeamPage() {
           />
         </div>
         
-        <div className="max-w-7xl mx-auto px-6 py-20 md:py-28 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 py-12 md:py-16 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -71,18 +71,18 @@ export default function TeamPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"
+              className="inline-block mb-3 px-3 py-1.5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"
             >
-              <p className="text-sm font-medium text-white tracking-wide uppercase">
+              <p className="text-xs font-medium text-white tracking-wide uppercase">
                 🔥 Agneepath 7.0
               </p>
             </motion.div>
             
-            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 bg-clip-text text-transparent mb-6 tracking-tight">
+            <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 bg-clip-text text-transparent mb-4 tracking-tight">
               Meet the Team
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed">
               The passionate individuals behind Ashoka University&apos;s premier sports festival.
             </p>
           </motion.div>
@@ -90,7 +90,7 @@ export default function TeamPage() {
       </div>
 
       {/* Team Sections */}
-      <div className="max-w-7xl mx-auto px-6 py-20">
+      <div className="max-w-7xl mx-auto px-4 py-12">
         {verticals.map((vertical, verticalIndex) => {
           const members = getTeamByVertical(vertical.name);
           
@@ -103,17 +103,17 @@ export default function TeamPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px", amount: 0.1 }}
               transition={{ duration: 0.3 }}
-              className="mb-24 last:mb-0"
+              className="mb-16 last:mb-0"
             >
               {/* Vertical Header */}
-              <div className="mb-10 relative">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-2 h-8 bg-gradient-to-b from-orange-500 to-red-500 rounded-full" />
-                  <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+              <div className="mb-6 relative">
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-1.5 h-6 bg-gradient-to-b from-orange-500 to-red-500 rounded-full" />
+                  <h2 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
                     {vertical.name}
                   </h2>
                 </div>
-                <p className="text-sm text-gray-600 ml-5">{vertical.description}</p>
+                <p className="text-xs text-gray-600 ml-3.5">{vertical.description}</p>
               </div>
 
               {/* Team Members Grid */}
@@ -122,7 +122,7 @@ export default function TeamPage() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.1 }}
-                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
               >
                 {members.map((member) => (
                   <motion.div
@@ -155,11 +155,11 @@ export default function TeamPage() {
                       </div>
 
                       {/* Member Info */}
-                      <div className="p-4 bg-white group-hover:bg-gradient-to-br group-hover:from-orange-50 group-hover:to-white transition-colors duration-300">
-                        <h3 className="font-bold text-gray-900 group-hover:text-orange-700 text-base mb-1 transition-colors">
+                      <div className="p-3 bg-white group-hover:bg-gradient-to-br group-hover:from-orange-50 group-hover:to-white transition-colors duration-300">
+                        <h3 className="font-bold text-gray-900 group-hover:text-orange-700 text-sm mb-0.5 transition-colors">
                           {member.name}
                         </h3>
-                        <p className="text-sm text-gray-600 group-hover:text-orange-600 transition-colors">
+                        <p className="text-xs text-gray-600 group-hover:text-orange-600 transition-colors">
                           {member.role}
                         </p>
                       </div>

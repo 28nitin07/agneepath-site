@@ -56,7 +56,7 @@ export default function SponsorsPage() {
           />
         </div>
         
-        <div className="max-w-7xl mx-auto px-6 py-20 md:py-28 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 py-12 md:py-16 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -67,18 +67,18 @@ export default function SponsorsPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 rounded-full"
+              className="inline-block mb-3 px-3 py-1.5 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 rounded-full"
             >
-              <p className="text-sm font-medium text-white tracking-wide uppercase">
+              <p className="text-xs font-medium text-white tracking-wide uppercase">
                 🤝 Agneepath 7.0
               </p>
             </motion.div>
             
-            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 bg-clip-text text-transparent mb-6 tracking-tight">
+            <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 bg-clip-text text-transparent mb-4 tracking-tight">
               Our Sponsors
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed">
               Partnering with excellence to bring you the best sports fest experience at Ashoka University.
             </p>
           </motion.div>
@@ -86,12 +86,12 @@ export default function SponsorsPage() {
       </div>
 
       {/* Sponsors Grid */}
-      <div className="max-w-7xl mx-auto px-6 py-20">
+      <div className="max-w-7xl mx-auto px-4 py-12">
         <motion.div
           variants={container}
           initial="hidden"
           animate="show"
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
         >
           {sponsors.map((sponsor) => {
           const Component = sponsor.website ? motion.a : motion.div;
@@ -134,8 +134,8 @@ export default function SponsorsPage() {
                 </div>
                 
                 {/* Sponsor name overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-orange-600/90 via-red-600/70 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white font-bold text-sm drop-shadow-lg">{sponsor.name}</p>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-orange-600/90 via-red-600/70 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white font-bold text-xs drop-shadow-lg">{sponsor.name}</p>
                 </div>
               </Card>
             </Component>
