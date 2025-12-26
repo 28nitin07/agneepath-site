@@ -140,6 +140,21 @@ export const teamMembers: TeamMember[] = [
     vertical: "Finance",
     image: "/team/arshiya-goyal.jpg"
   },
+  {
+    id: "11",
+    name: "Meesala Varsha",
+    role: "Finance",
+    vertical: "Finance",
+    image: "/team/meesala-varsha.jpg"
+  },
+  {
+    id: "12",
+    name: "Maehar Parkar",
+    role: "Finance",
+    vertical: "Finance",
+    image: "/team/maehar-parkar.jpg"
+  },
+
   
   // Social Media, Design & Marketing
   {
@@ -211,10 +226,10 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "20",
-    name: "Razin",
+    name: "Muhammed Razin",
     role: "Safety and Security",
     vertical: "Safety and Security",
-    image: "/team/razin.jpg"
+    image: "/team/muhammed-razin.jpg"
   },
   {
     id: "21",
@@ -227,10 +242,10 @@ export const teamMembers: TeamMember[] = [
   // Outreach & Registration Desk
   {
     id: "22",
-    name: "Vidishaa",
+    name: "Vidishaa Mundhra ",
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
-    image: "/team/vidishaa.jpg"
+    image: "/team/vidishaa-mundhra.jpg"
   },
   {
     id: "23",
@@ -264,10 +279,10 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "27",
-    name: "Minal",
+    name: "Minal Priya",
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
-    image: "/team/minal.jpg"
+    image: "/team/minal-priya.jpg"
   },
   {
     id: "28",
@@ -303,10 +318,10 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "32",
-    name: "Anshika",
+    name: "Anshika Sarraf",
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
-    image: "/team/anshika.jpg"
+    image: "/team/anshika-sarraf.jpg"
   },
   
   // Tech
