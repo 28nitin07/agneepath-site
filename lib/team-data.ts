@@ -63,23 +63,23 @@ export const verticals: Vertical[] = [
 ];
 
 export const teamMembers: TeamMember[] = [
-  // Festival Secretaries
+  // Fest Secretaries
   {
     id: "1",
     name: "Bhavya Sood",
-    role: "Festival Secretary",
+    role: "Fest Secretary",
     vertical: "Fest Secretaries",
     image: "/team/bhavya-sood.jpg"
   },
   {
     id: "2",
     name: "Adviti Basu",
-    role: "Festival Secretary",
+    role: "Fest Secretary",
     vertical: "Fest Secretaries",
     image: "/team/adviti-basu.jpg"
   },
   
-  // Deputy Festival Secretaries
+  // Deputy Fest Secretaries
   {
     id: "3",
     name: "Diya Sandhir",
@@ -158,28 +158,28 @@ export const teamMembers: TeamMember[] = [
   
   // Social Media, Design & Marketing
   {
-    id: "11",
+    id: "13",
     name: "Tejasvini Yadav",
     role: "Social Media, Design & Marketing",
     vertical: "Social Media, Design & Marketing",
     image: "/team/tejasvini-yadav.jpg"
   },
   {
-    id: "12",
+    id: "14",
     name: "Avani Goel",
     role: "Social Media, Design & Marketing",
     vertical: "Social Media, Design & Marketing",
     image: "/team/avani-goel.jpg"
   },
   {
-    id: "13",
+    id: "15",
     name: "Khushi Sethi",
     role: "Social Media, Design & Marketing",
     vertical: "Social Media, Design & Marketing",
     image: "/team/khushi-sethi.jpg"
   },
   {
-    id: "14",
+    id: "16",
     name: "Lakshya Kapoor",
     role: "Social Media, Design & Marketing",
     vertical: "Social Media, Design & Marketing",
@@ -188,28 +188,28 @@ export const teamMembers: TeamMember[] = [
   
   // Events and Logistics
   {
-    id: "15",
+    id: "17",
     name: "Siddharth Bhatnagar",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
     image: "/team/siddharth-bhatnagar.jpg"
   },
   {
-    id: "16",
+    id: "18",
     name: "Parth Agarwal",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
     image: "/team/parth-agarwal.jpg"
   },
   {
-    id: "17",
+    id: "19",
     name: "Akshitha Ashok",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
     image: "/team/akshitha-ashok.jpg"
   },
   {
-    id: "18",
+    id: "20",
     name: "Sanaya Mehta",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
@@ -218,21 +218,21 @@ export const teamMembers: TeamMember[] = [
   
   // Safety and Security
   {
-    id: "19",
+    id: "21",
     name: "Manoj N",
     role: "Safety and Security",
     vertical: "Safety and Security",
     image: "/team/manoj-n.jpg"
   },
   {
-    id: "20",
+    id: "22",
     name: "Muhammed Razin",
     role: "Safety and Security",
     vertical: "Safety and Security",
     image: "/team/muhammed-razin.jpg"
   },
   {
-    id: "21",
+    id: "23",
     name: "Veda Samhita",
     role: "Safety and Security",
     vertical: "Safety and Security",
@@ -241,28 +241,28 @@ export const teamMembers: TeamMember[] = [
   
   // Outreach & Registration Desk
   {
-    id: "22",
+    id: "24",
     name: "Vidishaa Mundhra ",
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
     image: "/team/vidishaa-mundhra.jpg"
   },
   {
-    id: "23",
+    id: "25",
     name: "Jiya Vaya",
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
     image: "/team/jiya-vaya.jpg"
   },
   {
-    id: "24",
+    id: "26",
     name: "Nishita Agarwal",
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
     image: "/team/nishita-agarwal.jpg"
   },
   {
-    id: "25",
+    id: "27",
     name: "Nishka Desai",
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
@@ -271,21 +271,21 @@ export const teamMembers: TeamMember[] = [
   
   // Travel & Hospitality
   {
-    id: "26",
+    id: "28",
     name: "Gia Doshi",
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
     image: "/team/gia-doshi.jpg"
   },
   {
-    id: "27",
+    id: "29",
     name: "Minal Priya",
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
     image: "/team/minal-priya.jpg"
   },
   {
-    id: "28",
+    id: "30",
     name: "Anshul Tekriwal",
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
@@ -294,14 +294,14 @@ export const teamMembers: TeamMember[] = [
   
   // Decor and Ceremonies
   {
-    id: "29",
+    id: "31",
     name: "Rajita Rai",
     role: "Decor and Ceremonies",
     vertical: "Decor and Ceremonies",
     image: "/team/rajita-rai.jpg"
   },
   {
-    id: "30",
+    id: "32",
     name: "Aadya Saxena",
     role: "Decor and Ceremonies",
     vertical: "Decor and Ceremonies",
@@ -310,14 +310,14 @@ export const teamMembers: TeamMember[] = [
   
   // HR, Legal and Documentation
   {
-    id: "31",
+    id: "33",
     name: "Manya Kapoor",
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
     image: "/team/manya-kapoor.jpg"
   },
   {
-    id: "32",
+    id: "34",
     name: "Anshika Sarraf",
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
@@ -326,28 +326,28 @@ export const teamMembers: TeamMember[] = [
   
   // Tech
   {
-    id: "33",
+    id: "35",
     name: "Nitin S",
     role: "Tech",
     vertical: "Tech",
     image: "/team/nitin-s.jpg"
   },
   {
-    id: "34",
+    id: "36",
     name: "Parshwa Doshi",
     role: "Tech",
     vertical: "Tech",
     image: "/team/parshwa-doshi.jpg"
   },
   {
-    id: "35",
+    id: "37",
     name: "Hriday Koppikar",
     role: "Tech",
     vertical: "Tech",
     image: "/team/hriday-koppikar.jpg"
   },
   {
-    id: "36",
+    id: "38",
     name: "Shristi Sharma",
     role: "Tech",
     vertical: "Tech",
