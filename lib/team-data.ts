@@ -256,13 +256,6 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "26",
-    name: "Nishita Agarwal",
-    role: "Outreach & Registration Desk",
-    vertical: "Outreach & Registration Desk",
-    image: "/team/nishita-agarwal.jpg"
-  },
-  {
-    id: "27",
     name: "Nishka Desai",
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
@@ -271,21 +264,21 @@ export const teamMembers: TeamMember[] = [
   
   // Travel & Hospitality
   {
-    id: "28",
+    id: "27",
     name: "Gia Doshi",
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
     image: "/team/gia-doshi.jpg"
   },
   {
-    id: "29",
+    id: "28",
     name: "Minal Priya",
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
     image: "/team/minal-priya.jpg"
   },
   {
-    id: "30",
+    id: "29",
     name: "Anshul Tekriwal",
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
@@ -294,14 +287,14 @@ export const teamMembers: TeamMember[] = [
   
   // Decor and Ceremonies
   {
-    id: "31",
+    id: "30",
     name: "Rajita Rai",
     role: "Decor and Ceremonies",
     vertical: "Decor and Ceremonies",
     image: "/team/rajita-rai.jpg"
   },
   {
-    id: "32",
+    id: "31",
     name: "Aadya Saxena",
     role: "Decor and Ceremonies",
     vertical: "Decor and Ceremonies",
@@ -310,14 +303,14 @@ export const teamMembers: TeamMember[] = [
   
   // HR, Legal and Documentation
   {
-    id: "33",
+    id: "32",
     name: "Manya Kapoor",
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
     image: "/team/manya-kapoor.jpg"
   },
   {
-    id: "34",
+    id: "33",
     name: "Anshika Sarraf",
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
@@ -326,28 +319,28 @@ export const teamMembers: TeamMember[] = [
   
   // Tech
   {
-    id: "35",
+    id: "34",
     name: "Nitin S",
     role: "Tech",
     vertical: "Tech",
     image: "/team/nitin-s.jpg"
   },
   {
-    id: "36",
+    id: "35",
     name: "Parshwa Doshi",
     role: "Tech",
     vertical: "Tech",
     image: "/team/parshwa-doshi.jpg"
   },
   {
-    id: "37",
+    id: "36",
     name: "Hriday Koppikar",
     role: "Tech",
     vertical: "Tech",
     image: "/team/hriday-koppikar.jpg"
   },
   {
-    id: "38",
+    id: "37",
     name: "Shristi Sharma",
     role: "Tech",
     vertical: "Tech",
