@@ -156,22 +156,6 @@ export default function LiveScoresPage() {
     </div>
   );
 }
-          </Card>
-
-          {/* Iframe placeholder (commented out for later use) */}
-          {/* 
-          <div className="bg-white rounded-3xl shadow-2xl shadow-orange-200/50 border-2 border-gray-200 overflow-hidden">
-            <iframe
-              src="YOUR_LIVE_SCORE_TRACKER_URL"
-              className="w-full h-[800px]"
-              title="Live Score Tracker"
-              frameBorder="0"
-              allowFullScreen
-            />
-          </div>
-          */}
-        </motion.div>
-      </div>
 
       {/* Footer */}
       <footer className="border-t border-gray-800 bg-black">
