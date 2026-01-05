@@ -11,25 +11,18 @@ interface ReelSectionProps {
 export default function ReelSection({ src, shrinkRange = 500 }: ReelSectionProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [scrollY, setScrollY] = useState(0);
-  const [windowHeight, setWindowHeight] = useState(0);
-
-  useEffect(() => {
-    setWindowHeight(window.innerHeight);
-    const handleResize = () => setWindowHeight(window.innerHeight);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
+
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
+    handleScroll(); // initialize once
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // progress = 0 → 1 over the shrinkRange
-  let progress = scrollY / shrinkRange;
-  progress = Math.min(Math.max(progress, 0), 1);
+  const progress = Math.min(Math.max(scrollY / shrinkRange, 0), 1);
 
   // scale from 1 → 0.5
   const scale = 1 - progress * 0.5;

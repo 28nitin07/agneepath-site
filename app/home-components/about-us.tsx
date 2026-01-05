@@ -1,57 +1,10 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 export default function AboutUsSection() {
   const ref = useRef<HTMLDivElement>(null);
-
-  // State to hold the actual scrollYProgress from useScroll
-  const [scrollYProgress, setScrollYProgress] = useState(null);
-
-  // Because `useScroll` requires a target (ref), but ref might be null on first render,
-  // we do a trick: we use a dummy scrollYProgress first, then update when ref is ready
-
-  // Create scroll tracking only when ref.current is defined
-  const scrollData = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-
-  // Update state only when ref is set
-  useEffect(() => {
-    if (!ref.current) return;
-
-    // Subscribe to scrollYProgress changes
-    const unsubscribe = scrollData.scrollYProgress.onChange((v) => {
-      setScrollYProgress(v);
-    });
-
-    // Cleanup subscription on unmount
-    return () => unsubscribe();
-  }, [ref.current]); // Runs again if ref changes
-
-  // Fallback: if no scrollYProgress yet, default to 0
-  const progressValue = scrollYProgress ?? 0;
-
-  // Use motion value from scroll progress for animation
-  const opacity = useTransform(
-    scrollData.scrollYProgress ?? 0,
-    [0, 0.2, 0.7, 1],
-    [0, 1, 1, 0]
-  );
-
-  const y = useTransform(
-    scrollData.scrollYProgress ?? 0,
-    [0, 0.2, 0.7, 1],
-    [80, 0, 0, -80]
-  );
-
-  const scale = useTransform(
-    scrollData.scrollYProgress ?? 0,
-    [0, 0.3, 0.7, 1],
-    [0.95, 1, 1, 0.98]
-  );
 
   return (
     <section
@@ -61,8 +14,10 @@ export default function AboutUsSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-agni-yellow/10 via-transparent to-agni-orange/10" />
 
       <motion.div
-        style={{ opacity, y, scale }}
         className="relative z-10 max-w-4xl"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2 className="text-5xl font-bold mb-6 text-white-700">
           About Agneepath
